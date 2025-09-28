@@ -85,6 +85,9 @@ notify_screenshot_add() {
     if [[ "$LANG" == ja* ]]; then
         notify_message "スクリーンショット付けました"
     fi
+    if [[ "$LANG" == zh_CN* ]]; then
+        notify_message "截图已添加"
+    fi
 }
 
 notify_record_start() {
@@ -94,6 +97,9 @@ notify_record_start() {
     fi
     if [[ "$LANG" == ja* ]]; then
         notify_message "録音しています..."
+    fi
+    if [[ "LANG" == zh_CN* ]]; then
+        notify_message "开始录音..."
     fi
 }
 
@@ -105,6 +111,9 @@ notify_record_stop() {
     if [[ "$LANG" == ja* ]]; then
         notify_message "録音付けました"
     fi
+    if [[ "$LANG" == zh_CN* ]]; then
+        notify_message "录音已添加"
+    fi
 }
 
 notify_sentence_add() {
@@ -114,6 +123,9 @@ notify_sentence_add() {
     fi
     if [[ "$LANG" == ja* ]]; then
         notify_message "例文付けました"
+    fi
+    if [[ "$LANG" == zh_CN* ]]; then
+        notify_message "例句已添加"
     fi
 }
 
